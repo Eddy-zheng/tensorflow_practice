@@ -1,0 +1,7 @@
+*.pyc
+*.ipynb
+*.ipynb_checkpoints/*
+logs/*
+bin/sftp-config.json
+lib/server/sftp-config.json
+/gunicorn.pid
