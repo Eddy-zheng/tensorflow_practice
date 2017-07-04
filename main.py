@@ -1,6 +1,7 @@
 from lib import data
 from model.mnist import regression_mnist
 from model.mnist import cnn_mnist
+from model.mnist import cnn_model
 
 
 class Test(object):
@@ -21,9 +22,13 @@ class Test(object):
 
         print results
 
+    def test_cnn_model(self):
+        train = cnn_model.Model()
+        results = train.train_model(self.mnist)
 
 
 if __name__ == '__main__':
     test = Test()
     test.test_regression_mnist()
     test.test_cnn_mnist()
+    test.test_cnn_model()
